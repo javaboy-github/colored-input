@@ -2,13 +2,12 @@
 This program is get colored input from keyboard using [readline](https://tiswww.case.edu/php/chet/readline/rltop.html)
 # Requirements
 - cmake
-- conan
+- readline
 # Run
 ```sh
 $ mkdir build
 $ cd build
-$ conan install .. --build=missing
-$ cmake .. -DCMAKE_TOOLCHAIN_FILE=conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
+$ cmake ..
 $ cmake --build
 $ ./colored-input
 ```
